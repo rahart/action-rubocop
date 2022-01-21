@@ -39,7 +39,7 @@ if [ "${INPUT_SKIP_INSTALL}" = "false" ]; then
       RUBOCOP_VERSION=$INPUT_RUBOCOP_VERSION
   fi
 
-  gem install -N rubocop --version "${RUBOCOP_VERSION}"
+  gem install -N airbnb-rubocop --version "3"
 
   # Traverse over list of rubocop extensions
   for extension in $INPUT_RUBOCOP_EXTENSIONS; do
